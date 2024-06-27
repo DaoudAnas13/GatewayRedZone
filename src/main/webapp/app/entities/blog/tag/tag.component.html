@@ -22,14 +22,14 @@
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="reset.bind(this)">
-                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+<!--                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>-->
                     <th scope="col"  jhiSortBy="name"><span jhiTranslate="gatewayApp.blogTag.name">Name</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
             <tbody infinite-scroll (scrolled)="loadPage(page + 1)" [infiniteScrollDisabled]="page >= links['last']" [infiniteScrollDistance]="0">
                 <tr *ngFor="let tag of tags ;trackBy: trackId">
-                    <td><a [routerLink]="['/tag', tag.id, 'view']">{{ tag.id }}</a></td>
+<!--                    <td><a [routerLink]="['/tag', tag.id, 'view']">{{ tag.id }}</a></td>-->
                     <td>{{ tag.name }}</td>
                     <td class="text-right">
                         <div class="btn-group">

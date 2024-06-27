@@ -22,7 +22,7 @@
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
-                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+<!--                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>-->
                     <th scope="col"  jhiSortBy="title"><span jhiTranslate="gatewayApp.storeProduct.title">Title</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="price"><span jhiTranslate="gatewayApp.storeProduct.price">Price</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="image"><span jhiTranslate="gatewayApp.storeProduct.image">Image</span> <fa-icon icon="sort"></fa-icon></th>
@@ -31,7 +31,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let product of products ;trackBy: trackId">
-                    <td><a [routerLink]="['/product', product.id, 'view']">{{ product.id }}</a></td>
+<!--                    <td><a [routerLink]="['/product', product.id, 'view']">{{ product.id }}</a></td>-->
                     <td>{{ product.title }}</td>
                     <td>{{ product.price }}</td>
                     <td>

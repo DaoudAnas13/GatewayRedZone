@@ -22,7 +22,7 @@
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr>
-                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+<!--                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>-->
                     <th scope="col" ><span jhiTranslate="gatewayApp.blogBlog.name">Name</span></th>
                     <th scope="col" ><span jhiTranslate="gatewayApp.blogBlog.handle">Handle</span></th>
                     <th scope="col"></th>
@@ -30,7 +30,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let blog of blogs ;trackBy: trackId">
-                    <td><a [routerLink]="['/blog', blog.id, 'view']">{{ blog.id }}</a></td>
+<!--                    <td><a [routerLink]="['/blog', blog.id, 'view']">{{ blog.id }}</a></td>-->
                     <td>{{ blog.name }}</td>
                     <td>{{ blog.handle }}</td>
                     <td class="text-right">
